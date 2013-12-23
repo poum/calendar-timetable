@@ -5,7 +5,7 @@ use Moose;
 use namespace::autoclean;
 use Carp;
 
-extends 'Calendar::Timetable::Exporter';
+extends 'Calendar::Timetable::Exporter::Markup';
 
 #ABSTRACT: Calendar Timetable HTML Exporter 
 
