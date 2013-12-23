@@ -17,7 +17,7 @@ use Carp;
 
 =head1 DESCRIPTION
 
-Calendar::Timetable store multirow events and output this events in multiple formats
+Calendar::Timetable stores multirow events and outputs this events in multiple formats
 
 =cut
 
