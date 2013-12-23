@@ -5,6 +5,8 @@ use Moose;
 use namespace::autoclean;
 use Carp;
 
+use Calendar::Timetable::Exporter::Html;
+
 #ABSTRACT: Multi row, multi format time table generator
 
 =head1 SYNOPSIS
@@ -30,6 +32,20 @@ has 'rows' => (
   isa     => 'ArrayRef[Calendar::Timetable::Row]',
   default => sub { [] },
 );
+
+=head2 html
+
+Export as HTML
+
+=cut
+
+sub html {
+  my $self = shift;
+
+  my $exporter = Calendar::Timetable::Exporter::Html->new();
+
+  return $exporter->output($self);
+}
 
 __PACKAGE__->meta->make_immutable;
 
