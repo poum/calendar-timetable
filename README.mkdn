@@ -1,0 +1,30 @@
+# NAME
+
+Calendar::Timetable - Multi row, multi format time table generator
+
+# VERSION
+
+version 0.001001
+
+# SYNOPSIS
+
+    use Calendar::Timetable;
+
+    my $time_table = Calendar::Timetable();
+
+    print $time_table->html();
+
+# DESCRIPTION
+
+Calendar::Timetable store multirow events and output this events in multiple formats
+
+# AUTHOR
+
+Philippe Poumaroux  <poum@cpan.org>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Philippe Poumaroux.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
