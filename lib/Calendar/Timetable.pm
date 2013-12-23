@@ -21,6 +21,16 @@ Calendar::Timetable stores multirow events and outputs this events in multiple f
 
 =cut
 
+=head1 METHODS
+
+=cut
+
+has 'rows' => (
+  is      => 'rw',
+  isa     => 'ArrayRef[Calendar::Timetable::Row]',
+  default => sub { [] },
+);
+
 __PACKAGE__->meta->make_immutable;
 
 1;
