@@ -18,6 +18,12 @@ version 0.001001
 
 Calendar::Timetable stores multirow events and outputs this events in multiple formats
 
+# METHODS
+
+## html
+
+Export as HTML
+
 # AUTHOR
 
 Philippe Poumaroux  <poum@cpan.org>
